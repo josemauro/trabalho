@@ -4,16 +4,18 @@ using namespace std;
 
 int main( int argc,char** argv) {
     int quantidade;
-    cout << "digite a quantiidade"<<endl;
+    cout << "digite a quantidade" <<endl;
     cin >> quantidade;
     float temperatura[quantidade];
     float aux =0.0;
+    
     for (int i = 0; i < quantidade; i++)
 	{
 		cout << "Digite a Temperatura "<< i+1 << endl;
 		cin >> temperatura[i];
 	}
-	for (int i = 0; i < quantidade; i++)
+	
+    for (int i = 0; i < quantidade; i++)
 	{
 		for (int j = i; j >0; j--)
 		{
@@ -29,13 +31,14 @@ int main( int argc,char** argv) {
 		}
 		
 	} 
-	for (int i = 0; i < quantidade; i++)
+	
+	
+    cout << "Vetor ordenado "  << endl;
+    for (int i = 0; i < quantidade; i++)
 	{
-		cout << "Temepratura em ordem crecente "  << endl;
-		cout << temperatura[i] << endl;
+		//cout << "Temepratura em ordem crecente "  << endl;
+		cout << temperatura[i] << " ";
 	}
 	
-    
-    
     return 0;
 }
